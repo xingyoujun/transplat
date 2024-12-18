@@ -1,9 +1,9 @@
 <p align="center">
   <h1 align="center">TranSplat: Generalizable 3D Gaussian Splatting <br> from Sparse Multi-View Images with Transformers</h1>
   <p align="center">
-    <a href="https://xingyoujun.github.io/">Chuanrui Zhang *</a>
+    <a href="https://xingyoujun.github.io/">Chuanrui Zhang </a>*
     &nbsp;·&nbsp;
-    <a href="https://heiheishuang.xyz/">Yingshuang Zou *</a>
+    <a href="https://heiheishuang.xyz/">Yingshuang Zou </a>*
     &nbsp;·&nbsp;
     <a href="https://lizhuoling.github.io/">Zhuoling Li</a>
     &nbsp;·&nbsp;
@@ -135,4 +135,4 @@ Our models are trained with 7 RTX3090 (24GB) GPU.
 
 ## Acknowledgements
 
-The project is largely based on [MVSplat](https://github.com/donydchen/mvsplat) and has incorporated numerous code snippets from [UniMatch](https://github.com/autonomousvision/unimatch), Depth-Anything-V2 from [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) and transformer architecture from [mmdetection3d](https://github.com/open-mmlab/mmdetection3d). Many thanks to these four projects for their excellent contributions!
+The project is largely based on [pixelSplat](https://github.com/dcharatan/pixelsplat), [MVSplat](https://github.com/donydchen/mvsplat) and has incorporated numerous code snippets from [UniMatch](https://github.com/autonomousvision/unimatch), Depth-Anything-V2 from [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) and transformer architecture from [mmdetection3d](https://github.com/open-mmlab/mmdetection3d). Many thanks to these four projects for their excellent contributions!
