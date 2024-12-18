@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7 python -m src.main +experiment=re10k data_loader.train.batch_size=2 wandb.mode=run wandb.name=transplat-re10k 2>&1 | tee transplat-re10k.log
+# CUDA_VISIBLE_DEVICES=0,1,2,4,5,6,7 python -m src.main +experiment=acid data_loader.train.batch_size=2 wandb.mode=run wandb.name=transplat-acid 2>&1 | tee transplat-acid.log

@@ -1,0 +1,49 @@
+# CUDA_VISIBLE_DEVICES=4 \
+# python -m src.main +experiment=re10k \
+# checkpointing.load=./checkpoints/re10k.ckpt \
+# mode=test \
+# dataset/view_sampler=evaluation \
+# test.compute_scores=true \
+# test.save_image=false \
+# test.save_video=false
+
+# CUDA_VISIBLE_DEVICES=4 \
+# python -m src.main +experiment=acid \
+# checkpointing.load=./checkpoints/acid.ckpt \
+# mode=test \
+# dataset/view_sampler=evaluation \
+# dataset.view_sampler.index_path=assets/evaluation_index_acid.json \
+# test.compute_scores=true 
+
+CUDA_VISIBLE_DEVICES=5 \
+python -m src.main +experiment=dtu \
+checkpointing.load=./checkpoints/re10k.ckpt \
+mode=test \
+dataset/view_sampler=evaluation \
+dataset.view_sampler.index_path=assets/evaluation_index_dtu_nctx2.json \
+dataset.view_sampler.num_context_views=2 \
+test.compute_scores=true \
+test.save_image=false \
+test.save_video=false
+
+# CUDA_VISIBLE_DEVICES=5 \
+# python -m src.main +experiment=dtu \
+# checkpointing.load=./checkpoints/re10k.ckpt \
+# mode=test \
+# dataset/view_sampler=evaluation \
+# dataset.view_sampler.index_path=assets/evaluation_index_dtu_nctx3.json \
+# dataset.view_sampler.num_context_views=3 \
+# test.compute_scores=true \
+# test.save_image=false \
+# test.save_video=false
+
+# CUDA_VISIBLE_DEVICES=5 \
+# python -m src.main +experiment=dtu \
+# checkpointing.load=./checkpoints/re10k.ckpt \
+# mode=test \
+# dataset/view_sampler=evaluation \
+# dataset.view_sampler.index_path=assets/evaluation_index_dtu_nctx4.json \
+# dataset.view_sampler.num_context_views=4 \
+# test.compute_scores=true \
+# test.save_image=false \
+# test.save_video=false
